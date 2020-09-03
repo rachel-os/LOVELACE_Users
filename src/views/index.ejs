@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reboot.JS</title>
+<!-- TO DO : improve CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 50px;
+    }
+  </style>
+</head>
+
+<body class="container">
+
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <span class="glyphicon glyphicon glyphicon-globe"></span>
+            Welcome to RebootJS
+          </a>
+
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="jumbotron">
+      <h2>This is the index</h2>
+      <p>Welcome to templating using EJS</p>
+    </div>
+
+    <h2>Create your user below</h2>
+    <form name="createUserForm" method="POST" action="/users">
+      <div class="form-group">
+        <label>First name</label>
+        <input class="form-control" type="text" name="firstname">
+      </div>
+      <div class="form-group">
+        <label>Last name</label>
+        <input class="form-control" type="text" name="lastname">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="text" name="email">
+      </div>
+      <input type="submit" value="Create" class="btn btn-info" id="saveButton">
+    </form>
+  </main>
+
+  <footer>
+    <p class="text-center text-muted">&#128153; Flint Academy &#128153;</p>
+  </footer>
+
+</body>
+
+</html>
