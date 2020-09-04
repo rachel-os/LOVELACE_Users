@@ -4,12 +4,15 @@
   "description": "From a JavaScript to TypeScript project (CRUD)",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js",
+    "build": "tsc && cp -R src/views dist/ && cd dist && nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "@types/express": "^4.17.8",
