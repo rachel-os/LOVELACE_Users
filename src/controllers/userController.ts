@@ -25,7 +25,7 @@ function deleteUser(userToDelete: User){
   });
 }
 
-export = {
+export default {
   findUser,
   createUser,
   deleteUser
